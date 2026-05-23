@@ -1,0 +1,186 @@
+<!-- profile.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EduChat Profile</title>
+
+  <link rel="stylesheet" href="css/profile.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+</head>
+
+<body>
+
+<div class="profile-page">
+
+  <!-- COVER PHOTO -->
+
+  <div class="cover-photo" id="coverPhoto">
+
+    <label class="upload-cover">
+
+      Change Cover
+
+      <input type="file" id="coverInput" hidden>
+
+    </label>
+
+  </div>
+
+  <!-- PROFILE CARD -->
+
+  <div class="profile-card">
+
+    <div class="profile-top">
+
+      <div class="profile-image-box">
+
+        <img src="assets/logo.png" id="profileImage" class="profile-image">
+
+        <label class="upload-profile">
+
+          +
+
+          <input type="file" id="profileInput" hidden>
+
+        </label>
+
+      </div>
+
+      <div>
+
+        <h1 id="username">
+          Loading...
+        </h1>
+
+        <p class="tag">
+          EduChat User
+        </p>
+
+        <p id="bio">
+          No bio yet...
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div class="stats">
+
+      <div class="stat-box">
+        <h2 id="friendsCount">0</h2>
+        <p>Friends</p>
+      </div>
+
+      <div class="stat-box">
+        <h2 id="groupsCount">0</h2>
+        <p>Groups</p>
+      </div>
+
+      <div class="stat-box">
+        <h2 id="messagesCount">0</h2>
+        <p>Messages</p>
+      </div>
+
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div class="buttons">
+
+      <button onclick="editProfile()">
+        Edit Profile
+      </button>
+
+      <button>
+        Add Friend
+      </button>
+
+      <button>
+        Message
+      </button>
+
+    </div>
+
+    <!-- ABOUT -->
+
+    <div class="section">
+
+      <h2>About</h2>
+
+      <div class="about-box">
+
+        <p id="location">
+          📍 South Africa
+        </p>
+
+        <p id="school">
+          🎓 Student
+        </p>
+
+        <p>
+          🌐 EduChat Member
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- POSTS -->
+
+    <div class="section">
+
+      <h2>Posts</h2>
+
+      <div id="postsContainer">
+
+        <div class="post">
+
+          <div class="post-top">
+
+            <img src="assets/logo.png" class="post-profile">
+
+            <div>
+              <h3 id="postUser">
+                User
+              </h3>
+
+              <small>
+                Just now
+              </small>
+            </div>
+
+          </div>
+
+          <p>
+            Welcome to EduChat 🚀
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/firebase.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>

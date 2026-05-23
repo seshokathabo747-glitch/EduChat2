@@ -1,0 +1,162 @@
+/* profile.css */
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#0f172a;
+  color:white;
+}
+
+.profile-page{
+  width:100%;
+  min-height:100vh;
+}
+
+.cover-photo{
+  height:300px;
+  background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+  position:relative;
+  background-size:cover;
+  background-position:center;
+}
+
+.upload-cover{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  background:white;
+  color:black;
+  padding:10px 15px;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.profile-card{
+  width:90%;
+  max-width:950px;
+  margin:auto;
+  margin-top:-80px;
+  background:#1e293b;
+  border-radius:25px;
+  padding:30px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+.profile-top{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.profile-image-box{
+  position:relative;
+}
+
+.profile-image{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  border:5px solid white;
+  object-fit:cover;
+}
+
+.upload-profile{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:40px;
+  height:40px;
+  background:#3b82f6;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  font-size:24px;
+  cursor:pointer;
+}
+
+.tag{
+  color:#60a5fa;
+  font-weight:600;
+}
+
+.stats{
+  display:flex;
+  justify-content:space-around;
+  margin-top:40px;
+  text-align:center;
+  flex-wrap:wrap;
+}
+
+.stat-box{
+  margin:10px;
+}
+
+.stat-box h2{
+  font-size:30px;
+}
+
+.buttons{
+  display:flex;
+  gap:15px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.buttons button{
+  padding:14px 22px;
+  border:none;
+  border-radius:14px;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.buttons button:hover{
+  transform:scale(1.05);
+}
+
+.section{
+  margin-top:45px;
+}
+
+.about-box{
+  background:#334155;
+  padding:20px;
+  border-radius:18px;
+}
+
+.post{
+  background:#334155;
+  padding:20px;
+  border-radius:18px;
+  margin-top:20px;
+}
+
+.post-top{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:15px;
+}
+
+.post-profile{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+
+@media(max-width:700px){
+
+  .profile-top{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .stats{
+    flex-direction:column;
+  }
+
+}

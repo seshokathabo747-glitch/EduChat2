@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduChat</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body>
+
+<div class="sidebar">
+  <h1>EduChat</h1>
+
+  <button onclick="location.href='profile.html'">Profile</button>
+  <button onclick="location.href='groups.html'">Groups</button>
+  <button onclick="location.href='settings.html'">Settings</button>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="chat-container">
+  <div id="messages"></div>
+
+  <div class="send-box">
+    <input type="text" id="messageInput" placeholder="Type message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script src="js/firebase.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
