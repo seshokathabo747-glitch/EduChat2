@@ -1,2 +1,13 @@
 # EduChat2
-Educational chat app
+
+Modern real-time messaging app.
+
+Features:
+- Real-time chat
+- Groups
+- Profiles
+- Firebase Authentication
+- GitHub Pages Hosting
+
+Founder & Co-Founder:
+Thabo Seshoka
